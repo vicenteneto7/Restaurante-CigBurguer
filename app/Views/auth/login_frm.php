@@ -12,7 +12,7 @@
       <option value="">Restaurante 3</option>
     </select>
     <hr />
-    <input type="email" id="text-username" name="text-username" placeholder="Email" />
+    <input type="email" id="text-username" name="text-username" placeholder="E-mail" />
     <input type="password" id="text-password" name="text-password" placeholder="Senha" />
     <button>Entrar</button>
   </form>

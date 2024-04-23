@@ -11,4 +11,8 @@ class Auth extends BaseController
     {
         echo view('auth/login_frm');
     }
+    public function teste()
+    {
+        echo view('teste');
+    }
 }
