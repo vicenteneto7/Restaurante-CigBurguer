@@ -1,0 +1,121 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+  font-family: "Rajdhani", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgb(79,0,3);
+  background: linear-gradient(90deg, rgba(79,0,3,1) 0%, rgba(182,0,4,1) 48%, rgba(79,0,3,1) 100%);
+}
+
+.container-1 {
+  background: rgb(255, 225, 190);
+  background: linear-gradient(
+    5deg,
+    rgba(255, 225, 190, 1) 0%,
+    rgba(165, 138, 114, 1) 100%
+  );
+  box-shadow: 3px 4px 20px 3px rgba(0,0,0,0.53);
+-webkit-box-shadow: 3px 4px 20px 3px rgba(0,0,0,0.53);
+-moz-box-shadow: 3px 4px 20px 3px rgba(0,0,0,0.53);
+
+  height: 46rem;
+  width: 32rem;
+  padding: 3rem;
+  border-radius: 0.9rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form input {
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  padding: 0 1rem;
+  height: 3rem;
+  width: 100%;
+
+  color: black;
+  outline: none;
+  border: none;
+}
+
+img {
+  padding-bottom: 2rem;
+}
+
+select {
+  height: 3rem;
+  border-radius: 0.3rem;
+  width: 100%;
+
+  color: black;
+  outline: none;
+  border: none;
+}
+
+option {
+    font-size: 1.5rem;
+}
+
+a {
+  color: #4e2d1c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
+button {
+  height: 3.5rem;
+  border-radius: 3rem;
+  width: 100%;
+
+  background-color: #FBDDBA;
+  border: 0.1rem solid #4e2d1c;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.57);
+ 
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
