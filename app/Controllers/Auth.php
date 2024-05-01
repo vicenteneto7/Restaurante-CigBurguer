@@ -17,6 +17,10 @@ class Auth extends BaseController
 
         $data['restaurants'] = $restaurants; //chave do lado da view que se transformará em uma variável
 
+        //validation errors
+        $data['validation_errors'] = session()->getFlashdata('validation_errors');
+        //se n exite erros de login, o 'validation_errors' fica vazio ou nulo
+
         echo view('auth/login_frm', $data);
     }
     public function login_submit()
@@ -51,10 +55,11 @@ class Auth extends BaseController
             ]
         ]);
 
-        if(!$validation){
-            dd($this->validator->getErrors());
+        if (!$validation) { //se a validação é falsa
+
             //session()->setFlashdata('select_restaurant', Decrypt($this->request->getPost('select_restaurant')));
-            //return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
+            return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
+            //vai redirecionar, voltar pra trás com os inputs q tinha preenchido e com uma mensagem na sessão com o esse código "validation errors" q é uma coleção dos erros q surgirem  $this->validator->getErrors()
         }
 
         echo 'ok';
