@@ -25,7 +25,10 @@ class UserIsLoggedIn implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null) //chamado no iniciio das requests, das rotas q iremos definir
     {
-        //
+        //check if user is logged in
+        if(!session()->has('user')){ //'user' é uma variável onde são armazenadas dados do user que eu quero, se ela não existir, o usuário e redirecionado para o login, isso signifca q ele não está logado(espécie de token jwt) 
+            return redirect()->to('/auth/login');
+        }
     }
 
     /**
