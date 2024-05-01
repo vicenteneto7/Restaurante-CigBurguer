@@ -7,7 +7,7 @@ function Encrypt($value){
 
     try {
        $encryption = \Config\Services::encrypter();
-       return $encryption->encrypt($value);
+       return bin2hex($encryption->encrypt($value));
 
     } catch (\Exception $e) {
         return null; //como se o valor se tivesse fornecido de forma vazia
@@ -21,7 +21,7 @@ function Decrypt($value){
 
     try {
        $encryption = \Config\Services::encrypter();
-       return $encryption->decrypt($value);
+       return $encryption->decrypt(hex2bin($value));
 
     } catch (\Exception $e) {
         return null; //como se o valor se tivesse fornecido de forma vazia

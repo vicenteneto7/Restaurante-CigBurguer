@@ -21,7 +21,10 @@ class Auth extends BaseController
     }
     public function login_submit()
     {
-        echo 'login submit';
+        //show restaurant id
+        $restaurant_id = Decrypt($this->request->getPost('select_restaurant'));
+
+        echo $restaurant_id;
     }
     public function logout()
     {
