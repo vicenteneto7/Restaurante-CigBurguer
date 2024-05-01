@@ -41,7 +41,9 @@
             </nav>
 
             <!-- content -->
-            <?= $this->renderSection('content') ?>
+            <div class="content p-4">
+                <?= $this->renderSection('content') ?>
+            </div>
 
         </section>
 

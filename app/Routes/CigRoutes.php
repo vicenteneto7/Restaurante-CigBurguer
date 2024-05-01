@@ -6,7 +6,10 @@ use Config\Services;
 
 $routes = Services::routes();
 
-//routes
+//main
+$routes->get('/', 'Main::index');
 
-$routes->get('/', 'Auth::index');
-$routes->get('/teste', 'Auth::teste');
+//login / logout
+$routes->get('/auth/login', 'Auth::login');
+$routes->get('/auth/login_submit', 'Auth::login_submit');
+$routes->get('/auth/logout', 'Auth::logout');

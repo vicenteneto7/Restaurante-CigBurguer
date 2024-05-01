@@ -2,7 +2,7 @@
  <header class="top-bar">
      <div class="d-flex">
          <div class="btn-main-menu me-3"><i class="fa-solid fa-bars"></i></div>
-         <img src="logo.png" alt="Logo CigBurger Backoffice" class="img-fluid" width="48px">
+         <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo CigBurger Backoffice" class="img-fluid" width="48px">
      </div>
 
      <div>
