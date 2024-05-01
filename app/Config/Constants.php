@@ -25,6 +25,9 @@ defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
  */
 defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.php');
 
+//encription key
+define('ENCRYPTION_KEY',     'b80bb7740288fda1f201890375a60c8f');
+
 /*
  |--------------------------------------------------------------------------
  | Timing Constants
