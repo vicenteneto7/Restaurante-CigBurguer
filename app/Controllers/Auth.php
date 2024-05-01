@@ -32,18 +32,18 @@ class Auth extends BaseController
                 'label' => 'Usuário',
                 'rules' => 'required|min_length[6]|max_length[16]',
                 'errors' => [
-                    'required' => 'O campo {field} é obrigatório.',
-                    'min_length' => 'O campo {field} deve ter, no mínimo, {param} caracteres.',
-                    'max_length' => 'O campo {field} deve ter, no máximo, {param} caracteres.',
+                    'required' => 'O {field} é obrigatório.',
+                    'min_length' => 'O {field} deve ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'O {field} deve ter, no máximo, {param} caracteres.',
                 ]
             ],
             'text_password' => [
                 'label' => 'Senha',
                 'rules' => 'required|min_length[6]|max_length[16]',
                 'errors' => [
-                    'required' => 'O campo {field} é obrigatório.',
-                    'min_length' => 'O campo {field} deve ter, no mínimo, {param} caracteres.',
-                    'max_length' => 'O campo {field} deve ter, no máximo, {param} caracteres.',
+                    'required' => 'A {field} é obrigatória.',
+                    'min_length' => 'A {field} deve ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'A campo {field} deve ter, no máximo, {param} caracteres.',
                 ]
             ],
             'select_restaurant' => [

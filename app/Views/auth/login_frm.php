@@ -17,10 +17,10 @@
 
     <hr />
 
-    <input type="text" id="text_username" name="text_username" placeholder="Usuário" />
+    <input type="text" id="text_username" name="text_username" placeholder="Usuário" value="<?= old('text_username') ?>"  /> <!-- value = persistência dos dados antigos q ele colocou no input antes de clicar em 'entrar' -->
     <?= display_error('text_username', $validation_errors) ?> <!-- pode apresentar nulo ou o código de html -->
 
-    <input type="password" id="text_password" name="text_password" placeholder="Senha" />
+    <input type="password" id="text_password" name="text_password" placeholder="Senha" value="<?= old('text_password') ?>" />
     <?= display_error('text_password', $validation_errors) ?> <!-- pode apresentar nulo ou o código de html -->
 
     <button>Entrar</button>
