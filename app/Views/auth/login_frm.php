@@ -39,6 +39,15 @@
   <p style="margin-top: 1rem;">Não tem uma conta? <a href="#">Cadastre-se</a></p>
   <a href="#">Recuperar senha</a>
 
+  <?php
+  if (!empty($login_error)) :  ?> <!-- se a variável login error não estiver vazia, ou seja, se existir errors, entra no if e é adicionada a div -->
+    <div class="alert alert-danger text-center p-1">
+      <?= $login_error ?>
+    </div>
+  <?php endif; ?>
+
+
+
 </div>
 
 
