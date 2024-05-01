@@ -7,9 +7,9 @@
     <p>Restaurante</p>
     <select class="form-select" name="" id="">
       <option value=""></option>
-      <option value="">Restaurante 1</option>
-      <option value="">Restaurante 2</option>
-      <option value="">Restaurante 3</option>
+      <?php foreach ($restaurants as $restaurant) : ?>
+        <option value="<?= $restaurant['id']?>"> <?= $restaurant['name']?> </option>
+      <?php endforeach; ?>
     </select>
     <hr />
     <input type="email" id="text-username" name="text-username" placeholder="E-mail" />
