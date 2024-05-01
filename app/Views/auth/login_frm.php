@@ -14,8 +14,8 @@
       <?php endforeach; ?>
     </select>
     <hr />
-    <input type="email" id="text-username" name="text-username" placeholder="E-mail" />
-    <input type="password" id="text-password" name="text-password" placeholder="Senha" />
+    <input type="text" id="text_username" name="text_username" placeholder="Usuário" />
+    <input type="password" id="text_password" name="text_password" placeholder="Senha" />
     <button>Entrar</button>
   <?= form_close() ?>
 
